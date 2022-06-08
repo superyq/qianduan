@@ -21,6 +21,12 @@ sub: 下标
 del: 删除
 ```
 
+## 语义化标签
+
+```
+section内容块，article独立内容，aside，header,footer，nav,figure,main
+```
+
 ## hr属性
 
 ```
@@ -104,5 +110,34 @@ td
                 password: 密码
                 submit: 按钮
                 reset: 清空
+                radio: 单选框
+                checkbox: 多选框
+                file: 上传文件
+                image: 上传文件
+                color: 生成颜色选择表单
+                tel: 唤起拨号盘表单
+                search: 搜索意义的表单
+                range: 滑动条表单
+                number: 数值表单
+                email: 输入email类型
+                url: 必须输入url类型
+                date: 必须输入日期
+                month: 必须输入月类型
+                week: 必须输入周类型
+                time: 必须输入时间类型
+                datetime-local: 选取本地时间
 </form>
+```
+
+## h5新增标签
+
+```
+<video src='' controls></video> 视频
+<audio src=''> 音频
+
+controls: 控件
+autopaly: 自动播放
+loop: 循环播放
+muted: 静音
+poster: 下载显示影像
 ```
