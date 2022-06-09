@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宽高自适应-两栏布局</title>
+    <style>
+        *{
+            margin: 0;
+            height: 0;
+        }
+
+        html,body{
+            height: 100%;
+        }
+
+        .box{
+            width: 200px;
+            height: 100%;
+            background-color: blue;
+            float: left;
+        }
+        .box1{
+            height: 100%;
+            background-color: red;
+            /* calc()函数的使用*/
+            /* calc()函数：用于动态计算长度值 */
+            /* 注意点：运算符前后都需要保留一个空格  列如：width:cala(100% - 200px) */
+            width: calc(100% - 200px);
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+</body>
+</html>

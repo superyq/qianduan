@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+
+        html,body{
+            height: 100%;
+        }
+
+        .box{
+            width: 320px;
+            height: 100%;
+            background-color: bisque;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header{
+            height: 44px;
+            background-color: #24ba4e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header div:nth-child(1){
+            border-radius: 12px 0 0 12px;
+            background-color: #63d985;
+            color: white;
+        }
+
+        header div:nth-child(2){
+            border-radius: 0 12px 12px 0px;
+            background-color: #3dd066;
+            color: rgba(255, 255, 255, 0.482);
+        }
+
+        
+        header div{
+            width: 60px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        section{
+            flex: 1;
+            background-color: aliceblue;
+        }
+
+        footer{
+            height: 44px;
+            background-color: grey;
+        }
+
+        section ul{
+            display: flex;
+            flex-direction: row;
+        }
+        section ul li{
+            flex: 1;
+            text-align: center;
+            font-size: 14px;
+            height: 35px;
+            line-height: 35px;
+            border-bottom: 1px solid #999999;
+        }
+
+        section ul li:hover{
+            border-bottom: 2px solid #3dd066;
+            color: #3dd066;
+        }
+
+        section .list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        section .list>div{
+            width: 49%;
+            margin-top: 4px;
+            border: 1px solid gray;
+       
+        }
+        section .list div img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <header>
+            <div class="left">热点</div>
+            <div class="right">关注</div>
+        </header>
+        <section>
+            <ul>
+                <li>足球现场</li>
+                <li>足球生活</li>
+                <li>足球美女</li>
+            </ul>
+            <div class="list">
+                <div>
+                    <img src="../img/7c4c9a43c2dc870d.jpg" alt="">
+                    <p>大家好</p>
+                </div>
+                <div><img src="../img/7c4c9a43c2dc870d.jpg" alt="">
+                    <p>大家好</p></div>
+                <div><img src="../img/7c4c9a43c2dc870d.jpg" alt="">
+                    <p>大家好</p></div>
+                <div><img src="../img/7c4c9a43c2dc870d.jpg" alt="">
+                    <p>大家好</p></div>
+                <div><img src="../img/7c4c9a43c2dc870d.jpg" alt="">
+                    <p>大家好</p></div>
+                <div><img src="../img/7c4c9a43c2dc870d.jpg" alt="">
+                    <p>大家好</p></div>
+            </div>
+        </section>
+        <footer></footer>    
+    </div>
+</body>
+</html>

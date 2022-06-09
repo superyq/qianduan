@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 标准盒模型 */
+        /* 增加内容盒子大小会改变 */
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border: 10px solid yellow;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            margin-top: 100px;
+        /* 怪异盒模型 */
+        /* 增加内容实际大小不会改变，会挤压盒子内部内容 */
+            box-sizing: border-box;
+
+            border: 10px solid peru;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box{
+            width: 500px;
+            height: 500px;
+            border: 1px solid pink;
+           /* 弹性盒子  是一种新的布局方式，特别适合移动端 */
+           /* 影响：
+           1，子元素横向排列 
+           2，行内元素，变成了块级元素
+           3，只有一个元素的时候， margin：auto 自动居中
+           */
+             display: flex;
+
+
+            /* 弹性盒方向 */
+            /* 取值： row 水平排列， column 垂直排列，  row-reverse  反向排列*/
+             flex-direction: row;
+
+            /* 调整主轴对齐方向 */
+            /* justify-content: flex-end; */
+            /* 取值：
+            flex-start 左
+            flex-end  右
+            center 水平垂直
+            */
+            
+
+            /* 调整主轴对齐方式 */
+            /* justify-content: space-between; */
+            /*  space-between  两端对齐
+                space-around   距离环绕 */
+                
+
+            /* 调整侧轴对齐方式 */
+            align-items: flex-start;
+
+            /* 单个调整对齐方式 */
+            /* align-self: center; */
+            /*取值同上  */
+
+            /* 折行 */
+            flex-wrap: wrap;
+
+            /* 控制折行后的行间距 */
+            /* 取值 
+            flex-start 
+            flex-end  
+            center
+            space-around
+            space-betweem
+            */
+            align-content: flex-start;
+        }
+
+       
+        .box div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+        /* 弹性盒修改主轴方向
+        1，默认主轴水平方向排列
+        */
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>111</div>
+        <div>222</div>
+        <div>333</div>
+        <div>444</div>
+        <div>555</div>
+        <div>666</div>
+        <div>777</div>
+        <div>888</div>
+        <div>999</div>
+        <div>000</div>
+        <div>...</div>
+    </div>
+</body>
+</html>
