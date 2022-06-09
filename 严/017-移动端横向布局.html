@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html,body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        header{
+            height: 45px;
+            background-color: gray;
+        }
+
+        section{
+            flex: 1;
+            display: flex;
+            overflow: auto;
+        }
+
+        footer{
+            height: 50px;
+            background-color: gray;
+        }
+        section ul{
+            width: 85px;
+            overflow: auto;
+        }
+        section ul li{
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            font-size: 14px;
+            background-color: #f8f8f8;
+        }
+
+        section ul li:hover{
+            background:white;
+            color:  red;
+        }
+        .deatail-right{
+            flex: 1;
+            /* background-color: rgb(233, 233, 233); */
+        }
+
+        /* 让滚动条隐藏 */
+        ::-webkit-scrollbar{
+            display: none;
+        }
+
+        .deatail-right-top{
+            height: 45px;
+            width: 100%;
+            background: #f8f8f8;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }    
+        
+        .deatail-right-top span{
+            font-size: 14px;
+        }
+
+        section .botton{
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: auto;
+        }
+        
+        section .botton>div{
+            height: 101px;
+            width: 33.33%;
+            text-align: center;
+
+        }
+        .botton div img{
+            width: 60px;
+            height: 50px;
+            margin-top: 11px;
+        }
+        </style>
+</head>
+<body>
+    <header></header>
+    <section>
+        <ul>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+        </ul>
+        <div class="deatail-right">
+            <div class="deatail-right-top">
+                <b>热门分类</b>
+                <div>
+                    <img src="">
+                    <a href="www.baidu.com">排行榜</a>
+                    <span>></span>
+                </div>
+            </div>
+            <div class="botton">
+                <div>
+                    <img src="../img/7c4c9a43c2dc870d.jpg" alt="">
+                    <p>电脑</p>
+                </div>
+                <div>
+                    <img src="../img/7c4c9a43c2dc870d.jpg" alt="">
+                    <p>电脑</p>
+                </div>
+                <div>
+                    <img src="../img/7c4c9a43c2dc870d.jpg" alt="">
+                    <p>电脑</p>
+                </div>
+                <div>
+                    <img src="../img/7c4c9a43c2dc870d.jpg" alt="">
+                    <p>电脑</p>
+                </div>
+                <div>
+                    <img src="../img/7c4c9a43c2dc870d.jpg" alt="">
+                    <p>电脑</p>
+                </div>
+                <div>
+                    <img src="../img/7c4c9a43c2dc870d.jpg" alt="">
+                    <p>电脑</p>
+                </div>
+                <div>
+                    <img src="../img/7c4c9a43c2dc870d.jpg" alt="">
+                    <p>电脑</p>
+                </div>
+                <div>
+                    <img src="../img/7c4c9a43c2dc870d.jpg" alt="">
+                    <p>电脑</p>
+                </div>
+                <div>
+                    <img src="../img/7c4c9a43c2dc870d.jpg" alt="">
+                    <p>电脑</p>
+                </div>
+                <div>
+                    <img src="../img/7c4c9a43c2dc870d.jpg" alt="">
+                    <p>电脑</p>
+                </div>
+                <div>
+                    <img src="../img/7c4c9a43c2dc870d.jpg" alt="">
+                    <p>电脑</p>
+                </div>
+                <div>
+                    <img src="../img/7c4c9a43c2dc870d.jpg" alt="">
+                    <p>电脑</p>
+                </div>
+                <div>
+                    <img src="../img/7c4c9a43c2dc870d.jpg" alt="">
+                    <p>电脑</p>
+                </div>
+                <div>
+                    <img src="../img/7c4c9a43c2dc870d.jpg" alt="">
+                    <p>电脑</p>
+                </div>
+                <div>
+                    <img src="../img/7c4c9a43c2dc870d.jpg" alt="">
+                    <p>电脑</p>
+                </div>
+                <div>
+                    <img src="../img/7c4c9a43c2dc870d.jpg" alt="">
+                    <p>电脑</p>
+                </div>
+                <div>
+                    <img src="../img/7c4c9a43c2dc870d.jpg" alt="">
+                    <p>电脑</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+</html>
