@@ -1,0 +1,37 @@
+{
+  "id": "3464321",
+  "name": "严锐项目",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "29358586",
+      "name": "icon／119",
+      "font_class": "a-icon119",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "29358587",
+      "name": "icon／120",
+      "font_class": "a-icon120",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "29358590",
+      "name": "icon／办公场所",
+      "font_class": "a-iconbangongchangsuo",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "29358596",
+      "name": "icon／白模",
+      "font_class": "a-iconbaimo",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    }
+  ]
+}
