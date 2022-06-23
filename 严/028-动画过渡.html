@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+             /*
+             all     所有属性
+             2s      动画时间
+             linear  匀速  
+             2s      延迟
+             除了 dispaly：none /block 属性。
+             */
+            transition:all 2s linear 2s;
+        }
+
+        div:hover{
+            height: 600px;
+            background-color: yellow;
+        }
+
+        /* 动画过渡类型 */
+        ul{
+            list-style: none;
+        }
+        li{
+            width: 200px;
+            height: 50px;
+            border:  1px solid gray;
+        }
+
+        ul:hover li:nth-child(1){
+            width: 600px;
+            transition: all 2s linear 1s;
+        }
+        
+        ul:hover li:nth-child(2){
+            width: 600px;
+            transition: all 2s ease;
+        }
+        
+        ul:hover li:nth-child(3){
+            width: 600px;
+            transition: all 2s ease-in;
+        }
+        
+        ul:hover li:nth-child(4){
+            width: 600px;
+            transition: all 2s ease-out;
+        }
+        
+        ul:hover li:nth-child(5){
+            width: 600px;
+            transition: all 2s ease-in-out;
+        }
+
+        ul:hover li:nth-child(6){
+            width: 600px;
+            transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        /* 动画的复合属性 */    
+
+        .div1{
+            margin-left: 20px;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* 检索或设置对象中的参与过渡的属性*/
+            transition-property: height bankground;
+            /* 检索或设置对象过渡的持续时间 */
+            transition-duration: 2s;
+            /* 检索或设置对象中的动画类型  */
+            transition-timing-function: linear;
+            /* 检索或设置对象延迟过渡的时间 */
+            transition-delay: 2s;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div class="div1"></div>
+
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>

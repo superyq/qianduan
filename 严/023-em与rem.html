@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rem布局</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 20px;
+        }
+        .box1{
+            border: 1px solid red;
+            font-size: 26px;
+        }
+        .box2{
+            font-size: 32px;
+        }
+
+        .box1 p{
+            font-size: 3em;
+        }
+        .box2 p{
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- px ,em ,rem之争 
+    px:50px
+    em:相对单位，相对于父元素的字体大小。 div width：10em；
+    rem：相对单位，相对于根元素（HTML）的字体大小的（倍数），div width：10em；
+    -->
+
+    <div class="box1">
+        <p>123</p>
+    </div>
+    <div class="box2">
+        <p>234</p>
+    </div>
+    
+
+
+
+</body>
+</html>

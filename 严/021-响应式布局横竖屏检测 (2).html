@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        body{
+            display: flex;
+            flex-wrap:wrap ;
+        }
+
+        div{
+            height: 100px;
+            background-color: red;
+            border: 2px solid yellow;
+            box-sizing: border-box;
+            width: 33.333%;
+        }
+
+        /* orientation: portrait 表示在竖屏状态下显示以下 */
+        @media screen and (orientation: portrait) {
+            div{
+                width: 33.333%;
+            }
+        }
+
+        /* orientation: portrait 表示在横屏状态下显示以下 */
+        @media screen and (orientation: landscape) {
+            div{
+                width: 20%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

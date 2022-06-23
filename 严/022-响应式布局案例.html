@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        .top{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .top>div{
+            width: 49%;
+        }
+        .top img{
+            width: 100%;
+        }
+
+        .top .right{
+            display: flex;
+            justify-content:space-between;
+        }
+        .top .right>div{
+            width: 49%;
+        }
+
+        @media screen and (max-width:768px) {
+            .top>div{
+            width: 100%;
+        }
+        }
+
+        .botton{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .botton>div{
+            width: 23%;
+            padding: 5px;
+            box-sizing: border-box;
+            border: 1px solid red;
+            margin-bottom: 10px;
+            box-shadow: 0 0 5px black;
+        }
+
+        .botton img{
+            width: 100%;
+        }
+
+        @media screen and (max-width:1024px) and (min-width:768px) {
+            .botton>div{
+            width: 31%;
+        }
+        }
+
+        @media screen and (max-width:768px) and (min-width:450px) {
+            .botton>div{
+            width: 48%;
+        }
+        }
+        
+        @media screen and (max-width:450x) {
+            .botton>div{
+            width:90%;
+        }
+        }
+
+
+    </style>
+</head>
+<body>
+
+  <div class="top">
+    <div class="left">
+        <img src="../img/美女1.jpg" alt="">
+    </div>
+    <div class="right">
+        <img src="../img/webp (1).jpg" alt="">
+    </div>
+  </div>
+
+
+  <div class="botton">
+      <div>
+          <img src="../img/webp (2).jpg" alt="">
+          <span>美女</span>
+      </div>
+      <div>
+          <img src="../img/美女1.jpg" alt="">
+          <span>美女</span>
+      </div>
+      <div>
+        <img src="../img/美女1.jpg" alt="">
+        <span>美女</span>
+    </div>
+    <div>
+        <img src="../img/美女1.jpg" alt="">
+        <span>美女</span>
+    </div>
+  </div>
+
+</body>
+</html>

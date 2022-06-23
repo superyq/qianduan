@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多列布局（瀑布流）</title>
+    <style>
+        /* 1.column-count
+           说明：属性规定元素应该被分割的列数 
+        适用于：除table外的非替换块级元素，table colls， inline-block元素
+        */
+
+        /* 2.column-gap
+           说明：属性规定列之间的间隔大小
+        */
+
+        /* 3.column-rule
+           说明：设置或检索对象的列与列之间的边框，复合属性
+           column-rule-color 规定列之间规则的颜色
+           column-rule-style 规定列之间规则的样式
+           column-rule-width 规定列之间规则的宽度
+        */
+        /* 4.column-fill
+           说明：列高度统一， 
+        */
+
+        
+        /* 显示的列数 */
+        div{
+            height: 300px;
+            background-color: yellow;
+             /* 显示的列数 */
+            column-count: 5;
+
+            /* 调整列间距 */
+            column-gap: 30px;
+
+            /* 列边框 */
+            column-rule: 2px solid red;
+
+            /* 列高度统一 */
+            /* column-fill: auto; */
+
+            /* 调整列宽 */
+            column-width: 500px;
+            
+            /* 禁止盒子内部折行 */
+            break-inside: avoid;
+
+        }
+         /* 跨列属性 只能给子元素*/
+         div>h1{
+                column-span: all;
+                 /*all 横跨所有列  */
+                text-align: center;
+            }
+           
+    </style>
+</head>
+<body>
+    <div>
+        <h1>大标题 </h1>
+        /* 1.column-count
+        说明：属性规定元素应该被分割的列数 
+     适用于：除table外的非替换块级元素，table colls， inline-block元素
+     */
+
+     /* 2.column-gap
+        说明：属性规定列之间的间隔大小
+     */
+
+     /* 3.column-rule
+        说明：设置或检索对象的列与列之间的边框，复合属性
+        column-rule-color 规定列之间规则的颜色
+        column-rule-style 规定列之间规则的样式
+        column-rule-width 规定列之间规则的宽度 /* 1.column-count
+        说明：属性规定元素应该被分割的列数 
+     适用于：除table外的非替换块级元素，table colls， inline-block元素
+     */
+
+     /* 2.column-gap
+        说明：属性规定列之间的间隔大小
+     */
+
+     /* 3.column-rule
+        说明：设置或检索对象的列与列之间的边框，复合属性
+        column-rule-color 规定列之间规则的颜色
+        column-rule-style 规定列之间规则的样式
+        column-rule-width 规定列之间规则的宽度
+    </div>
+</body>
+</html>

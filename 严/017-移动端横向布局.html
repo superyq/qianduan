@@ -23,11 +23,30 @@
             list-style: none;
         }
 
+        /* 横向滚动条 */
         header{
             height: 45px;
             background-color: gray;
         }
+        header ul{
+            display: flex;
+            overflow: auto;
+            color: white;
+        }
+        
+        header ul li{
+            flex-shrink: 0;
+            line-height: 45px;
+            padding: 0 10px;
+        }
+        header ul li:hover{
+            background-color: white;
+           color: red;
+        }
 
+
+
+        
         section{
             flex: 1;
             display: flex;
@@ -98,7 +117,25 @@
         </style>
 </head>
 <body>
-    <header></header>
+    <header>
+        <ul>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+            <li>热门推荐</li>
+        </ul>
+    </header>
     <section>
         <ul>
             <li>热门推荐</li>
@@ -198,6 +235,6 @@
             </div>
         </div>
     </section>
-    <footer></footer>
+    <footer>footer</footer>
 </body>
 </html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+
+        html,body{
+            height: 100%;    
+        }
+
+        body{
+            background-color: yellow;
+        }
+        
+        /* 设置响应式 */
+        /* 1.大于等于1000的时候，背景颜色显示黄色 */
+        @media screen and (min-width:1000px){
+            body{
+            background-color: yellow;
+                }
+        }
+
+        /* 大于500 小于1000的时候背景是红色的 */
+        @media screen and (max-width:1000px) and (min-width:500px){
+            body{
+            background-color: red;
+                }
+        }
+
+        /* 小于500的时候， 显示绿色 */
+        @media screen and (max-width:500px){
+            body{
+            background-color: green;
+                }
+        }
+    </style>
+</head>
+<body>
+    
+        
+</body>
+</html>
